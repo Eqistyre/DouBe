@@ -53,8 +53,11 @@
                                 <img src={{ best_dou[i].img }} style="width: 100%;height:100%;">
 							</div>
 							<div class="list-zan">
-								<img src="../static/img/zan-1.png" class="listzan">
+							
+							   <form method="post" action="/index?doube=%s" % {{best_dou[i].id}} >
+								<input type="submit" class="zan-btn">
 								<span>{{ best_dou[i].dou }}</span>
+								</form>
 							</div>
 						</div>
 					<div class="list-1-right">
@@ -73,7 +76,7 @@
 								<img src={{ best_dou[i].img }} style="width: 100%;height:100%;">
 							</div>
 							<div class="list-zan">
-								<img src="../static/img/zan-1.png" class="listzan">
+								<input type="image" src="../static/img/zan-1.png" class="listzan">
 								<span>{{ best_dou[i+1].dou }}</span>
 							</div>
 						</div>
@@ -94,7 +97,7 @@
 							</div>
 						</div>
 						<div class="list-zan">
-							<img src="../static/img/zan-1.png" class="listzan">
+							<input type="image" src="../static/img/zan-1.png" class="listzan">
 							<span>{{ new_doube.dou }}</span>
 						</div>
 					</div>
@@ -109,7 +112,7 @@
 							</div>
 						</div>
 						<div class="list-zan">
-							<img src="../static/img/zan-1.png" class="listzan">
+							<input type="image" src="../static/img/zan-1.png" class="listzan">
 							<span>{{ new_doube.dou }}</span>
 						</div>
 					</div>
